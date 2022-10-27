@@ -20,7 +20,7 @@ public class AlgoServiceImpl implements AlgoService {
 
     @Override
     public void handleSignal(int signal) {
-        if (algorithms.containsValue(signal))
+        if (algorithms.containsKey(signal))
             algorithms.get(signal).handleSignal(signal);
         else
             throw new IllegalArgumentException("There is no service to handle signal: " + signal);
