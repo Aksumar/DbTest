@@ -5,6 +5,6 @@ import java.util.Set;
 
 public interface SignalNumber {
     Set<Integer> usedNumbers = new HashSet<>();
-    int getNumber();
 
+    int getNumber();
 }

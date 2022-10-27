@@ -15,5 +15,4 @@ public class AlgorithmController {
     void handleSignal(@PathVariable Integer id) {
         algoService.handleSignal(id);
     }
-
 }

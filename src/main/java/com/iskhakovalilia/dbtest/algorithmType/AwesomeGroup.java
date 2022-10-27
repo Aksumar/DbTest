@@ -6,7 +6,7 @@ public enum AwesomeGroup implements SignalNumber {
 
     private final int number;
 
-    AwesomeGroup(int number){
+    AwesomeGroup(int number) {
         if (usedNumbers.contains(number))
             throw new IllegalArgumentException("There is already algorithm with the same number");
 

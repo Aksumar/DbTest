@@ -1,25 +1,22 @@
 package com.iskhakovalilia.dbtest.algorithm;
 
 import com.iskhakovalilia.dbtest.algorithmType.AwesomeGroup;
-import com.iskhakovalilia.dbtest.lib.Algo;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.db.Algo;
 import org.springframework.stereotype.Component;
 
 @Component
 public class SetUpAlgorithm extends Algorithm {
 
-    SetUpAlgorithm(){
+    SetUpAlgorithm() {
         signalNumber = AwesomeGroup.SIGNAL_1;
     }
 
-    @Autowired
-    Algo algo;
-
     @Override
     public void handleSignal(int signal) {
-        algo.setUp();
-        algo.setAlgoParam(1,60);
-        algo.performCalc();
-        algo.submitToMarket();
+        Algo algoLib = new Algo();
+        algoLib.setUp();
+        algoLib.setAlgoParam(1, 60);
+        algoLib.performCalc();
+        algoLib.submitToMarket();
     }
 }

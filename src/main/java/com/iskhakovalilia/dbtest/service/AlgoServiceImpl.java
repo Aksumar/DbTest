@@ -10,10 +10,10 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Service
-public class AlgoServiceImpl implements AlgoService{
+public class AlgoServiceImpl implements AlgoService {
     Map<Integer, Algorithm> algorithms;
 
-    public AlgoServiceImpl(@Autowired List<Algorithm> algorithms){
+    public AlgoServiceImpl(@Autowired List<Algorithm> algorithms) {
         this.algorithms = algorithms.stream()
                 .collect(Collectors.toMap(algorithm -> algorithm.signalNumber.getNumber(), Function.identity()));
     }
