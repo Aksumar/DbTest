@@ -2,7 +2,6 @@ package com.iskhakovalilia.dbtest.algorithmType;
 
 public enum PerfectGroup implements SignalNumber {
     SIGNAL_3(3);
-
     private final int number;
 
     PerfectGroup(int number) {
