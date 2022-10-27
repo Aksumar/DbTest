@@ -15,3 +15,6 @@ ofc there should more approparete names of such groups depending of logic of alg
 Static final field `usedNumbers` in the interface `SignalNumber` that is thread safe HashSet helps to detect if more than one service assosiated with a signal.
 
 2) All services that handle signals are autowired to the main service `AlgoServiceImpl` and tranfered to the map. It helps to find a necessary service with O(1).
+
+
+P.S. Unfortunately, I don't have enough time to add unit tests, even though I understand how important they are :(
