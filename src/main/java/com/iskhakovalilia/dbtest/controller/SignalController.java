@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class AlgorithmController {
+public class SignalController {
     private final AlgoService algoService;
 
     @PostMapping("/signal/{id}")
