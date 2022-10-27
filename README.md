@@ -3,7 +3,7 @@
 I would like to highlight a few points:
 
 1) Were used Java11, SpringBoot
-2) `class Algo` and `interface SignalHandler` were moved to a separate library `org.db`
+2) `class Algo` and `interface SignalHandler` were moved to a separate library as .jar
 3) There are two layers of the application : `SignalController` - controller, `AlgoServiceImpl` - main service, that handles  signals
 4) As there were no requirements on what to do, when smth except 1-3 is requested, exception is throwed ( this is a good question, that i had to ask :) )
 
